@@ -26,11 +26,11 @@
                 <a class="nav-link" href="#sejarah-perkembangan">Sejarah & Perkembangan</a>
                 <a class="nav-link" href="#fitur">Fitur</a>
                 <a class="nav-link" href="#kelebihan-kekurangan">Kelebihan & Kekurangan</a>
+                <a class="nav-link" href="#jenis-data">Jenis Data</a>
+                <a class="nav-link" href="#cocok-untuk">Penggunaan yang cocok</a>
                 <a class="nav-link" href="#contoh-syntax">Contoh Syntax</a>
                 <a class="nav-link" href="#contoh-aplikasi">Contoh Aplikasi</a>
                 <a class="nav-link" href="#keamanan">Keamanan</a>
-                <a class="nav-link" href="#cocok-untuk">Penggunaan yang cocok</a>
-                <a class="nav-link" href="#jenis-data">Jenis Data</a>
                 <a class="nav-link" href="#credit">Credit</a>
               </li>
             </ul>
@@ -88,16 +88,19 @@
       </article>
       <article class="container-fluid p-4 mb-5" id="fitur">
         <h2 class="mb-5">Fitur</h2>
-        <div class="row justify-content-evenly align-items-center">
-          <div class="col-md-4 mb-4">
-            <img src="img/sqlite-logo.jpg" alt="SQLite Logo" class="img-thumbnail img-rounded">
-          </div>
-          <div class="col-md-7">
+        <div class="row justify-content-evenly align-items-top">
+          <div class="col-md-6 mb-4">
             <h4 class="mb-3">Self-Contained</h4>
-            <p class="mb-4">
-              SQLite bersifat Self Contained artinya memerlukan dukungan minimal dari sistem operasi atau perpustakaan eksternal. Hal ini membuat SQLite dapat digunakan di lingkungan apa pun terutama di perangkat yang disematkan seperti iPhone, ponsel Android, konsol game, pemutar media genggam, dan lain sebagainya.
-            </p>
-            <a href="fitur.html" class="btn btn-primary">Lihat Fitur Lengkap</a>
+            <p>SQLite bersifat Self Contained artinya memerlukan dukungan minimal dari sistem operasi atau perpustakaan eksternal. Hal ini membuat SQLite dapat digunakan di lingkungan apa pun terutama di perangkat yang disematkan seperti iPhone, ponsel Android, konsol game, pemutar media genggam, dan lain sebagainya.</p>
+          </div>
+          <div class="col-md-5">
+            <h4 class="mb-3">Serverless</h4>
+            <p>Database SQLite terintegrasi dengan aplikasi yang mengakses database. Aplikasi berinteraksi dengan database SQLite membaca dan menulis langsung dari file database yang disimpan di disk.</p>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-12">
+            <a href="kelebihan-kekurangan.html" class="btn btn-primary">Selengkapnya...</a>
           </div>
         </div>
       </article>
@@ -105,14 +108,14 @@
         <h2 class="mb-5">Kelebihan & Kekurangan</h2>
         <div class="row justify-content-evenly align-items-top">
           <div class="col-md-6 mb-4">
-            <h4>Kelebihan</h4>
+            <h4 class="mb-3">Kelebihan</h4>
             <ul>
               <li>Ringan. Dengan ukuran yang sangat kecil sekitar 500kb dan kemudahan penggunaan yang ditujukan untuk embedded system menjadikan SQLite database tidak akan memberatkan aplikasi Anda. Anda juga tidak perlu menunggu waktu download yang lebih lama dan ini tidak akan menghabiskan kuota data Anda karena SQLite ini ringan dan hemat dalam menggunakan resource.</li>
               <li>Tidak memerlukan proses instalasi. Anda dapat mudah menjalankan database dan mengetikan perintah SQL Anda karena SQLite bersifat portable sehingga tidak perlu melakukan instalasi apapun saat ingin menggunakannya. Hanya dalam beberapa klik dan kemudian database telah siap digunakan oleh Anda.</li>
             </ul>
           </div>
           <div class="col-md-6">
-            <h4>Kekurangan</h4>
+            <h4 class="mb-3">Kekurangan</h4>
             <ul>
               <li>Tidak ada manajemen pengguna. Database canggih datang dengan dukungan untuk pengguna, dikelola yaitu dengan koneksi hak akses set ke database dan tabel. Mengingat tujuan dan sifat SQLite (tidak digunakan untuk pengguna multi/banyak), fitur ini tidak ada.</li>
               <li>Kurangnya kemungkinan untuk bekerja dengan kinerja tambahan. Sesuai dengan namanya SQLite mengutamakan kesederhanaan dan portabilitas, jadi SQLite tidak mungkin untuk bekerja dengan untuk mendapatkan banyak tambahan kinerja. Karena SQLite kesederhanaan, secara teknis tidak mungkin untuk membuatnya berkinerja lebih.</li>
@@ -125,16 +128,72 @@
           </div>
         </div>
       </article>
+      <article class="container-fluid p-4 mb-5" id="jenis-data">
+        <h2 class="mb-5">Jenis Data</h2>
+        <div class="row justify-content-evenly align-items-center">
+          <div class="col-md-4 mb-4">
+            <img src="img/sqlite-logo.jpg" alt="SQLite Logo" class="img-thumbnail img-rounded">
+          </div>
+          <div class="col-md-7">
+            <p>Pada SQLite data disimpan dan dikelola dalam bentuk tabel, view dan objek-objek database lainnya. Jadi data yang dikelola oleh SQLite merupakan jenis data terstruktur.</p>
+          </div>
+        </div>
+      </article>
+      <article class="container-fluid p-4 mb-5" id="cocok-untuk">
+        <h2 class="mb-5">Penggunaan yang cocok</h2>
+        <div class="row justify-content-evenly align-items-center flex-md-row-reverse">
+          <div class="col-md-4 mb-4">
+            <img src="img/sqlite-logo.jpg" alt="SQLite Logo" class="img-thumbnail img-rounded">
+          </div>
+          <div class="col-md-7">
+            <p>SQLite merupakan sistem pengelolaan data yang ditujukan untuk penggunaan di sebuah sistem atau aplikasi yang terisolasi. Jadi SQLite sebenarnya mirip seperti alat untuk membaca, menulis dan mengupdate file lokal di sebuah aplikasi. Hanya saja operasi tesebut dilakukan menggunakan sintak SQL.</p>
+            <p>
+              Beberapa contoh penggunaan SQLite adalah seperti:
+              <ul>
+                <li>Untuk aplikasi yang tidak membutuhkan koneksi internet</li>
+                <li>Untuk aplikasi berskala kecil</li>
+                <li>Untuk aplikasi yang tidak membutuhkan data besar</li>
+                <li>Cocok untuk aplikasi yang berdiri sendiri</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+      </article>
       <article class="container-fluid p-4 mb-5" id="contoh-syntax">
         <h2 class="mb-5">Contoh Syntax</h2>
         <div class="row justify-content-evenly align-items-center">
-          <div class="col-md-6 mb-4">
+          <div class="col-md-5 mb-4">
             <div class="editor-dark rounded">
               <span class="syntax-typing"></span>
             </div>
           </div>
           <div class="col-md-6">
             <p>Syntax DDL dan DML pada SQLite kurang lebih sama dengan syntax DDL dan DML pada SQL. Syntax DDL contohnya adalah <code>CREATE</code>, <code>ALTER</code> dan <code>DROP</code>. Untuk syntax DML contohnya adalah <code>INSERT</code>, <code>UPDATE</code> dan <code>DELETE</code> untuk grup "update" dan <code>SELECT</code> untuk grup "query" pada SQLite.</p>
+          </div>
+        </div>
+      </article>
+      <article class="container-fluid p-4 mb-5" id="contoh-aplikasi">
+        <h2 class="mb-5">Contoh Aplikasi</h2>
+        <div class="row justify-content-evenly align-items-top flex-md-row-reverse">
+          <div class="col-md-4 mb-4">
+            <img src="img/sqlitebrowser-ui.png" class="img-thumbnail img-rounded" alt="SQLite Browser">
+          </div>
+          <div class="col-md-7">
+            <h4 class="mb-3">SQLite Browser</h4>
+            <p>DB Browser for SQLite (DB4S) adalah alat open source visual, untuk membuat, mendesain, dan mengedit file database yang kompatibel dengan SQLite.</p>
+            <p>DB4S digunakan untuk pengguna dan pengembang yang ingin membuat, mencari, dan mengedit database SQLite secara visual tanpa harus mengetikkan perintah-perintah SQL.</p>
+          </div>
+        </div>
+      </article>
+      <article class="container-fluid p-4 mb-5" id="keamanan">
+        <h2 class="mb-5">Keamanan</h2>
+        <div class="row justify-content-evenly align-items-center">
+          <div class="col-md-4 mb-4">
+            <img src="img/sqlite-logo.jpg" alt="SQLite Logo" class="img-thumbnail img-rounded">
+          </div>
+          <div class="col-md-7">
+            <p>SQLite tidak memiliki mekanisme otentikasi bawaan. Dengan begitu, file database SQLite dapat diakses oleh siapa saja.</p>
+            <p>Tapi meskipun begitu, SQLite menyediakan antarmuka otentikasi terpisah yang dapat diaktifkan secara manual melalui kode sumber SQLite secara langsung. Jadi kita harus menyertakan file <code>ext/userauth/userauth.c</code> saat build dan menambahkan opsi compile <code>-DSQLITE_USER_AUTHENTICATION</code>.</p>
           </div>
         </div>
       </article>
