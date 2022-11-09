@@ -9,10 +9,10 @@
   <body>
     <header class="mb-3">
       <div class="header-bg bg-light">
-        <h1 class="header-title text-primary">SQLite Database</h1>
-        <p class="header-description text-secondary">Sebuah Library yang mengimplementasikan Engine Database SQL yang kecil, cepat, dan memiliki fitur lengkap.</p>
+        <h1 class="header-title text-primary mb-3">SQLite Database</h1>
+        <small class="header-description text-secondary">Sebuah Library yang mengimplementasikan Engine Database SQL yang kecil, cepat, dan memiliki fitur lengkap.</small>
       </div>
-      <nav class="navbar sticky-top navbar-dark navbar-expand-lg bg-primary">
+      <nav class="navbar navbar-dark navbar-expand-lg bg-primary">
         <div class="container-fluid">
           <a class="navbar-brand" href="javascript:void(0)">SQLite</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-content">
@@ -37,9 +37,10 @@
           </div>
         </div>
       </nav>
+      <svg class="text-primary" style="margin-top: -0.2rem" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="currentColor" fill-opacity="1" d="M0,160L40,165.3C80,171,160,181,240,170.7C320,160,400,128,480,122.7C560,117,640,139,720,149.3C800,160,880,160,960,165.3C1040,171,1120,181,1200,181.3C1280,181,1360,171,1400,165.3L1440,160L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path></svg>
     </header>
     <main class="p-4">
-      <article class="container-fluid p-4" id="download">
+      <article class="container-fluid p-4 mb-3" id="download">
         <h2 class="mb-4">Download</h2>
         <div class="row justify-content-evenly align-items-center">
           <div class="col-md-4 mb-3">
@@ -54,7 +55,7 @@
           </div>
         </div>
       </article>
-      <article class="container-fluid p-4" id="lisensi">
+      <article class="container-fluid p-4 mb-3" id="lisensi">
         <h2 class="mb-4">Lisensi</h2>
         <div class="row justify-content-evenly align-items-center flex-md-row-reverse">
           <div class="col-md-4 mb-3">
@@ -70,7 +71,7 @@
           </div>
         </div>
       </article>
-      <article class="container-fluid p-4" id="sejarah-perkembangan">
+      <article class="container-fluid p-4 mb-3" id="sejarah-perkembangan">
         <h2 class="mb-4">Sejarah & Perkembangan</h2>
         <div class="row justify-content-evenly align-items-top">
           <div class="col-md-5 mb-3">
@@ -85,7 +86,7 @@
           </div>
         </div>
       </article>
-      <article class="container-fluid p-4" id="fitur">
+      <article class="container-fluid p-4 mb-3" id="fitur">
         <h2 class="mb-4">Fitur</h2>
         <div class="row justify-content-evenly align-items-center">
           <div class="col-md-4 mb-3">
@@ -100,7 +101,96 @@
           </div>
         </div>
       </article>
+      <article class="container-fluid p-4 mb-3" id="kelebihan-kekurangan">
+        <h2 class="mb-4">Kelebihan & Kekurangan</h2>
+        <div class="row justify-content-evenly align-items-top">
+          <div class="col-md-6 mb-3">
+            <h4>Kelebihan</h4>
+            <ul>
+              <li>Ringan. Dengan ukuran yang sangat kecil sekitar 500kb dan kemudahan penggunaan yang ditujukan untuk embedded system menjadikan SQLite database tidak akan memberatkan aplikasi Anda. Anda juga tidak perlu menunggu waktu download yang lebih lama dan ini tidak akan menghabiskan kuota data Anda karena SQLite ini ringan dan hemat dalam menggunakan resource.</li>
+              <li>Tidak memerlukan proses instalasi. Anda dapat mudah menjalankan database dan mengetikan perintah SQL Anda karena SQLite bersifat portable sehingga tidak perlu melakukan instalasi apapun saat ingin menggunakannya. Hanya dalam beberapa klik dan kemudian database telah siap digunakan oleh Anda.</li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <h4>Kekurangan</h4>
+            <ul>
+              <li>Tidak ada manajemen pengguna. Database canggih datang dengan dukungan untuk pengguna, dikelola yaitu dengan koneksi hak akses set ke database dan tabel. Mengingat tujuan dan sifat SQLite (tidak digunakan untuk pengguna multi/banyak), fitur ini tidak ada.</li>
+              <li>Kurangnya kemungkinan untuk bekerja dengan kinerja tambahan. Sesuai dengan namanya SQLite mengutamakan kesederhanaan dan portabilitas, jadi SQLite tidak mungkin untuk bekerja dengan untuk mendapatkan banyak tambahan kinerja. Karena SQLite kesederhanaan, secara teknis tidak mungkin untuk membuatnya berkinerja lebih.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-12">
+            <a href="kelebihan-kekurangan.html" class="btn btn-primary">Selengkapnya...</a>
+          </div>
+        </div>
+      </article>
+      <article class="container-fluid p-4 mb-3" id="contoh-syntax">
+        <h2 class="mb-4">Contoh Syntax</h2>
+        <div class="row justify-content-evenly align-items-center">
+          <div class="col-md-6 mb-3">
+            <div class="editor-dark rounded">
+              <span class="syntax-typing"></span>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <p>Syntax DDL dan DML pada SQLite kurang lebih sama dengan syntax DDL dan DML pada SQL. Syntax DDL contohnya adalah <code>CREATE</code>, <code>ALTER</code> dan <code>DROP</code>. Untuk syntax DML contohnya adalah <code>INSERT</code>, <code>UPDATE</code> dan <code>DELETE</code> untuk grup "update" dan <code>SELECT</code> untuk grup "query" pada SQLite.</p>
+          </div>
+        </div>
+      </article>
     </main>
+    <footer>
+      <svg class="text-primary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="currentColor" fill-opacity="1" d="M0,160L48,165.3C96,171,192,181,288,181.3C384,181,480,171,576,181.3C672,192,768,224,864,229.3C960,235,1056,213,1152,197.3C1248,181,1344,171,1392,165.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+      <div class="bg-primary p-3 text-center text-white">
+        <p>&copy; 2022 Iwan Haryatno</p>
+      </div>
+    </footer>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+      const sqliteSyntaxes = [
+              'CREATE TABLE siswa (\n  nis  INTEGER  PRIMARY KEY,\n  nama  TEXT  NOT NULL,\n  kelas  TEXT  NOT NULL\n);',
+              'ALTER TABLE siswa RENAME TO tb_siswa;',
+              'ALTER TABLE tb_siswa ADD COLUMN alamat TEXT NOT NULL;',
+              'INSERT INTO tb_siswa (nis, nama, kelas, alamat) VALUES (18896, "Arcturus Scorpionis", "XII RPK 3", "Proxima Centauri");',
+              'UPDATE tb_siswa SET kelas="XII RPL 1" WHERE nis=18896;',
+              'DELETE FROM tb_siswa WHERE nis=18896;',
+              'DROP TABLE tb_siswa;'
+            ];
+      const interval = {
+              LETTER: 150,
+              SYNTAX: 5000
+            };
+      let syntaxIndex = 0;
+      let syntaxLength = 0;
+
+      iterateSyntax();
+      
+      function iterateSyntax() {
+        const syntax = sqliteSyntaxes[syntaxIndex];
+        type(syntax);
+      }
+      function type(syntax) {
+        const typed = syntax.substring(0, syntaxLength);
+        
+        const syntaxTypingElement = document.querySelector('.syntax-typing');
+        syntaxTypingElement.innerText = typed;
+
+        syntaxLength++;
+
+        if (syntaxLength > syntax.length) {
+          syntaxLength = 0;
+          syntaxIndex++;
+          setTimeout(iterateSyntax, interval.SYNTAX);
+
+          if (syntaxIndex == sqliteSyntaxes.length) {
+            syntaxIndex = 0;
+          }
+
+          return;
+        }
+
+        setTimeout(() => type(syntax), interval.LETTER);
+      }
+    </script>
   </body>
 </html>
