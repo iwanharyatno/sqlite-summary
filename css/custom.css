@@ -4,8 +4,12 @@ body {
   font-family: 'Nunito', sans-serif;
 }
 
-p {
+p, li {
   line-height: 2rem;
+}
+
+article h2 {
+  text-align: center;
 }
 
 .header-bg {
