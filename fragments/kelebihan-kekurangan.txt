@@ -1,0 +1,100 @@
+<div data-bs-title="Kelebihan & Kekurangan SQLite">
+  <div class="p-3">
+    <h2 class="my-4">Kelebihan</h2>
+    <div class="table-responsive">
+      <table class="table table-bordered table-striped">
+        <tbody>
+          <tr>
+            <td style="min-width: 10rem">Ringan</td>
+            <td style="min-width: 20rem">Dengan ukuran yang sangat kecil sekitar 500kb dan kemudahan penggunaan yang ditujukan untuk embedded system menjadikan SQLite database tidak akan memberatkan aplikasi Anda. Anda juga tidak perlu menunggu waktu download yang lebih lama dan ini tidak akan menghabiskan kuota data Anda karena SQLite ini ringan dan hemat dalam menggunakan resource.</td>
+          </tr>
+          <tr>
+            <td style="min-width: 10rem">Tidak memerlukan proses instalasi</td>
+            <td style="min-width: 20rem">Anda dapat mudah menjalankan database dan mengetikan perintah SQL Anda karena SQLite bersifat portable sehingga tidak perlu melakukan instalasi apapun saat ingin menggunakannya. Hanya dalam beberapa klik dan kemudian database telah siap digunakan oleh Anda.</td>
+          </tr>
+          <tr>
+            <td style="min-width: 10rem">Bersifat Open Source</td>
+            <td style="min-width: 20rem">Karena bersifat open-source, ini artinya SQLite tidak membutuhkan lisensi apapun atau gratis untuk menggunakannya. Bagi Anda yang sedang mengembangkan sebuah project, ini akan menghemat pengeluaran biaya Anda sehingga dapat dimanfaatkan untuk meningkatkan pendapatan Anda.</td>
+          </tr>
+          <tr>
+            <td style="min-width: 10rem">Dapat digunakan di platform yang berbeda-beda</td>
+            <td style="min-width: 20rem">SQLite dapat dijalankan diberbagai sistem operasi seperti Windows, macOS, Linux, Android dan sebagainya. Ini akan memudahkan Anda jika project anda ada di cross platform.</td>
+          </tr>
+          <tr>
+            <td style="min-width: 10rem">Membantu dalam melakukan analisa data</td>
+            <td style="min-width: 20rem">Menyimpan data di database, maka Anda juga memungkinkan untuk melakukan menganalisa data yang Anda miliki sehingga mendapatkan informasi yang Anda butuhkan. Dengan mengetikan beberapa query SQL dan menjalankannya, Anda akan memperoleh informasi dalam jangka waktu yang sangat cepat serta data ini dapat diakses oleh Anda dengan mudah. Melakukan analisa seperti kenaikan penjualan beberapa bulan, top 3 product teratas Anda, ranking pelanggan Anda, dan sebagainya tidak akan membuang banyak waktu Anda lebih banyak.</td>
+          </tr>
+          <tr>
+            <td style="min-width: 10rem">Menjaga keamanan data dengan baik</td>
+            <td style="min-width: 20rem">Anda dapat melakukan backup data di database SQLite sehingga jika terdapat kejadian tidak terduga di masa mendatang seperti error database atau serangan siber dari oknum yang tidak bertanggung jawab, maka Anda tidak perlu mengkhawatirkan hal-hal yang berkaitan dengan keamanan data.</td>
+          </tr>
+          <tr>
+            <td style="min-width: 10rem">Mudah Dikelola</td>
+            <td style="min-width: 20rem">SQLite mudah dikelola karena SQLite merupakan file tunggal (atau beberapa file saja dengan tambahan log transaksi). Bila dibandingkan dengan database lainnya, SQLite juga tidak membutuhkan konfigurasi banyak. Selain itu, format filenya juga stabil di versi utama. Jadi, jika punya file database SQLite dari versi 3.0.0, pembaca tetap bisa membacanya dengan menggunakan SQLite terbaru 3.10.0. Jika pembaca ingin mengambil file database pada thumb drive, pembaca hanya perlu menyalin filenya saja.</td>
+          </tr>
+          <tr>
+            <td style="min-width: 10rem">Sangat Stabil</td>
+            <td style="min-width: 20rem">SQLite secara aktif dikembangkan oleh beberapa software engineer yang handal. Dalam waktu beberapa bulan, SQLite sering dirilis. Banyak fitur yang telah ditambahkan. Salah satunya fitur dukungan untuk data JSON melalui ekstensi json1. Selain itu, SQLite juga merilis versi perbaikan dari pencarian teks lengkap, yang meliputi hasil pemeringkatan dengan menggunakan algoritma BM25.</td>
+          </tr>
+          <tr>
+            <td style="min-width: 10rem">Bisa diperluas</td>
+            <td style="min-width: 20rem">SQLite juga bisa diperluas dengan ekstensi dan diintegrasikan dengan API. Salah satu contohnya adalah modul Python Pysqlite yang menjadi driver untuk SQLite. Ada juga modul Python Apsw yang menjadi driver alternatif SQLite. Modul Apsw menyediakan banyak API yang berguna untuk mendefinisikan fungsi kustom SQL, fungsi agregat, dan kolaborasi.</td>
+          </tr>
+          <tr>
+            <td style="min-width: 10rem">Sangat cepat</td>
+            <td style="min-width: 20rem">SQLite sangat cepat jika berjalan pada lingkup yang sama sehingga tidak ada sumber daya tambahan seperti jaringan ketika menjalankan query maupun mengambil data. SQLite benar-benar fleksibel sehingga tidak membutuhkan protokol, serialisasi ataupun komunikasi melalui socket. SQLite juga bisa berjalan pada perangkat mobile, yang kini banyak dipakai di berbagai aplikasi Android.</td>
+          </tr>
+          <tr>
+            <td style="min-width: 10rem">Mode WAL</td>
+            <td style="min-width: 20rem">Mode WAL pertama kali diperkenalkan pada SQLite 3.7.0. Fitur ini berguna untuk mengatasi kongkurensi dimana aktivitas membaca dan menulis data bisa dilakukan secara bersamaan. Tanpa mode WAL, akan sangat sulit jika banyak menggunakan proses yang berkaitan dengan database.</td>
+          </tr>
+          <tr>
+            <td style="min-width: 10rem">Berbasis file</td>
+            <td style="min-width: 20rem">Seluruh database terdiri dari satu file pada disk, yang membuatnya sangat portabel.</td>
+          </tr>
+          <tr>
+            <td style="min-width: 10rem">Terstandarisasi dengan baik</td>
+            <td style="min-width: 20rem">Meskipun mungkin tampak seperti sebuah implementasi DB yang "sederhana", SQLite menggunakan SQL yang tentunya kita sudah tahu bahwa SQL itu sudah sangat terstandar dengan baik.</td>
+          </tr>
+          <tr>
+            <td style="min-width: 10rem">Sangat baik untuk pengembangan dan bahkan pengujian</td>
+            <td style="min-width: 20rem">SQLite, dengan basis fitur yang kaya, dapat menawarkan lebih dari apa yang dibutuhkan untuk pembangunan dengan kesederhanaan bekerja dengan satu file dan terkait pustaka bahasa C.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="p-3">
+    <h2 class="my-4">Kekurangan</h2>
+    <div class="table-responsive">
+      <table class="table table-bordered table-striped">
+        <tbody>
+          <tr>
+            <td style="min-width: 10rem">Tidak ada manajemen pengguna</td>
+            <td style="min-width: 20rem">Database canggih datang dengan dukungan untuk pengguna, dikelola yaitu dengan koneksi hak akses set ke database dan tabel. Mengingat tujuan dan sifat SQLite (tidak digunakan untuk pengguna multi/banyak), fitur ini tidak ada.</td>
+          </tr>
+          <tr>
+            <td style="min-width: 10rem">Kurangnya kemungkinan untuk bekerja dengan kinerja tambahan.</td>
+            <td style="min-width: 20rem">Sesuai dengan namanya SQLite mengutamakan kesederhanaan dan portabilitas, jadi SQLite tidak mungkin untuk bekerja dengan untuk mendapatkan banyak tambahan kinerja. Karena SQLite kesederhanaan, secara teknis tidak mungkin untuk membuatnya berkinerja lebih.</td>
+          </tr>
+          <tr>
+            <td style="min-width: 10rem">Tidak tepat digunakan pada kondisi High Transaction Rate</td>
+            <td style="min-width: 20rem">Karena SQLite tidak dapat dibandingkan dengan Large RDBMS yang memang dirancang untuk menangani proses transaksi yang jumlahnya tinggi.</td>
+          </tr>
+          <tr>
+            <td style="min-width: 10rem">Tidak memiliki mekanisme autorisasi dan pengaksesan  tersendiri</td>
+            <td style="min-width: 20rem">Dalam mengakses file database, SQLite bergantung sepenuhnya pada filesystem permission yang dikelola oleh operating system</td>
+          </tr>
+          <tr>
+            <td style="min-width: 10rem">Tidak ada komponen jaringan (network)</td>
+            <td style="min-width: 20rem">Karena itu, SQLite lebih baik digunakan sebagai basis data yang bersifat local resource.</td>
+          </tr>
+          <tr>
+            <td style="min-width: 10rem">SQLite tidak dirancang untuk memiliki mekanisme yang bersifat safe dalam melakukan replication.</td>
+            <td style="min-width: 20rem">Operasi simple replication pada SQLite dapat dilakukan dengan menyalin file basis data, tetapi hal ini harus dilakukan dengan terlebih dahulu memastikan tidak ada proses yang memodifikasi data pada saat proses replikasi dilakukan.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

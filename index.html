@@ -50,6 +50,21 @@
       </svg>
     </header>
     <main>
+      <div class="modal fade" id="detail-modal">
+        <div class="modal-dialog modal-fullscreen">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title">Detail</h1>
+              <button class="btn btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-primary" type="button" data-bs-dismiss="modal">Tutup</button>
+            </div>
+          </div>
+        </div>
+      </div>
       <article class="container-fluid p-5 mb-5" id="download">
         <h2 class="mb-5">Download</h2>
         <div class="row justify-content-evenly align-items-center">
@@ -110,7 +125,7 @@
         </div>
         <div class="row mt-3">
           <div class="col-12">
-            <a href="kelebihan-kekurangan.html" class="btn btn-primary">Selengkapnya...</a>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#detail-modal" data-bs-resource="fragments/fitur.txt">Selengkapnya...</button>
           </div>
         </div>
       </article>
@@ -134,7 +149,7 @@
         </div>
         <div class="row mt-3">
           <div class="col-12">
-            <a href="kelebihan-kekurangan.html" class="btn btn-primary">Selengkapnya...</a>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#detail-modal" data-bs-resource="fragments/kelebihan-kekurangan.txt">Selengkapnya...</button>
           </div>
         </div>
       </article>
@@ -158,7 +173,7 @@
           <div class="col-md-7">
             <p>SQLite merupakan sistem pengelolaan data yang ditujukan untuk penggunaan di sebuah sistem atau aplikasi yang terisolasi. Jadi SQLite sebenarnya mirip seperti alat untuk membaca, menulis dan mengupdate file lokal di sebuah aplikasi. Hanya saja operasi tesebut dilakukan menggunakan sintak SQL.</p>
             <p>
-              Beberapa contoh penggunaan SQLite adalah seperti:
+              Beberapa contoh penggunaan SQLite adalah seperti berikut:
               <ul>
                 <li>Untuk aplikasi yang tidak membutuhkan koneksi internet</li>
                 <li>Untuk aplikasi berskala kecil</li>
@@ -298,6 +313,22 @@
         clearTimeout(letterTimeout);
 
         iterateSyntax();
+      });
+
+
+      window.addEventListener('show.bs.modal', function(e){
+        const fetchUrl = e.relatedTarget.getAttribute('data-bs-resource');
+        const modalTitleField = document.querySelector('#detail-modal .modal-title');
+        const modalBodyField = document.querySelector('#detail-modal .modal-body');
+
+        modalBodyField.innerHTML = '<div class="spinner spinner-grow d-block mx-auto mt-4 text-primary"></div>';
+
+        fetch(fetchUrl)
+          .then(res => res.text())
+          .then(html => {
+            modalBodyField.innerHTML = html;
+            modalTitleField.innerText = modalBodyField.querySelector('div').getAttribute('data-bs-title');
+          });
       });
     </script>
   </body>

@@ -1,0 +1,28 @@
+<div data-bs-title="Fitur-fitur SQLite">
+  <div class="p-3">
+    <h2 class="my-4">Self Contained (Mandiri)</h2>
+    <p>SQLite bersifat Self Contained artinya memerlukan dukungan minimal dari sistem operasi atau perpustakaan eksternal. Hal ini membuat SQLite dapat digunakan di lingkungan apa pun terutama di perangkat yang disematkan seperti iPhone, ponsel Android, konsol game, pemutar media genggam, dan lain sebagainya.</p>
+    <p>SQLite dikembangkan menggunakan ANSI-C. Kode sumber tersedia sebagai <code>sqlite3.c</code> besar dan file headernya <code>sqlite3.h</code>. Jika Anda ingin mengembangkan aplikasi yang menggunakan SQLite, Anda hanya perlu memasukkan file-file ini ke dalam proyek Anda dan mengompilasinya dengan kode Anda.</p>
+  </div>
+  
+  <div class="p-3">
+    <h2 class="my-4">Serverless</h2>
+    <p>Biasanya, RDBMS seperti MySQL, PostgreSQL, dan lain sebagainya, memerlukan proses server terpisah untuk beroperasi. Aplikasi yang ingin mengakses server database menggunakan protokol TCP/IP untuk mengirim dan menerima permintaan. Ini disebut arsitektur klien/server.</p>
+    <p>Database SQLite terintegrasi dengan aplikasi yang mengakses database. Aplikasi berinteraksi dengan database SQLite membaca dan menulis langsung dari file database yang disimpan di disk.</p>
+  </div>
+  
+  <div class="p-3">
+    <h2 class="my-4">Zero Configuration</h2>
+    <p>Karena SQLite adalah arsitektur tanpa server, Anda tidak perlu “menginstal” SQLite sebelum menggunakannya. Tidak ada proses server yang perlu dikonfigurasi, dimulai, dan dihentikan. Selain itu, SQLite tidak menggunakan file konfigurasi apa pun.</p>
+  </div>
+  
+  <div class="p-3">
+    <h2 class="my-4">Transaksional</h2>
+    <p>Semua transaksi di SQLite sepenuhnya sesuai dengan ACID. Artinya semua kueri dan perubahan bersifat Atom, Konsisten, Terisolasi, dan Tahan Lama. Dengan kata lain, semua perubahan dalam suatu transaksi terjadi sepenuhnya atau tidak sama sekali bahkan ketika situasi yang tidak terduga seperti crash aplikasi, kegagalan daya, atau crash sistem operasi terjadi.</p>
+  </div>
+  
+  <div class="p-3">
+    <h2 class="my-4">Embedded database</h2>
+    <p>SQLite memiliki ciri embedded yaitu SQLite library akan menyatu dan tertanam dalam aplikasi yang akan menggunakan DBMS SQLite.</p>
+  </div>
+</div>
