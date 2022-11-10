@@ -49,6 +49,26 @@ article h2 {
   margin-left: -0.25rem;
 }
 
+.credit-person {
+  padding: 1rem;
+}
+
+.person-image {
+  width: 7rem;
+  margin: 1rem auto;
+  display: block;
+  border-radius: 50%;
+}
+
+.person-name, .person-contact {
+  text-align: center;
+}
+
+.person-contact {
+  opacity: 0.7;
+  font-size: smaller;
+}
+
 @keyframes blink {
   from {
     opacity: 1;
