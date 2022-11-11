@@ -58,6 +58,7 @@ article h2 {
   margin: 1rem auto;
   display: block;
   border-radius: 50%;
+  border: 2px solid #fff;
 }
 
 .person-name, .person-contact {
@@ -66,7 +67,7 @@ article h2 {
 
 .person-contact {
   opacity: 0.7;
-  font-size: smaller;
+  font-size: small;
 }
 
 @keyframes blink {
