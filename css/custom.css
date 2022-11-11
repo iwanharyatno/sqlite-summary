@@ -32,10 +32,11 @@ article h2 {
 
 .editor-dark {
   font-family: monospace;
-  background-color: #000;
+  background-color: #222;
   color: #fff;
-  padding: 0.5rem;
-  height: 12rem;
+  padding: 1rem;
+  min-height: 12rem;
+  cursor: pointer;
 }
 
 .syntax-typing {
