@@ -306,9 +306,17 @@
       }
 
       const editor = document.querySelector('.editor-dark');
-      editor.addEventListener('click', function() {
+      editor.addEventListener('dblclick', function() {
         syntaxIndex = 0;
         syntaxLength = 0;
+
+        clearTimeout(syntaxTimeout);
+        clearTimeout(letterTimeout);
+
+        iterateSyntax();
+      });
+      editor.addEventListener('click', function() {
+        syntaxLength = sqliteSyntaxes[syntaxIndex].length;
 
         clearTimeout(syntaxTimeout);
         clearTimeout(letterTimeout);
