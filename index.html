@@ -254,6 +254,7 @@
         </div>
       </section>
     </footer>
+    <script src="js/syntax-highlighter.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script>
       const sqliteSyntaxes = [
@@ -285,7 +286,7 @@
         const typed = syntax.substring(0, syntaxLength);
         
         const syntaxTypingElement = document.querySelector('.syntax-typing');
-        syntaxTypingElement.innerText = typed;
+        syntaxTypingElement.innerHTML = highlight(typed);
 
         syntaxLength++;
 
